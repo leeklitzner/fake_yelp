@@ -4,8 +4,8 @@
 <% @reviews.each do |review| %>
   <h2><%= review.name %></h2>
   <p>Rating: <%= review.rating %>/10</p>
-  <%= link_to 'Show Review', review_path(review), {class: "btn light-blue"} %>
-  <%= link_to 'Edit Review', edit_review_path(review), {class: "btn lime"}  %>
-  <%= link_to 'Destroy Review', review, {method: :delete, class: "btn red pulse"} %>
+  <%= link_to 'Show Review', review_path(review), {class: "btn green"} %>
+  <%= link_to 'Edit Review', edit_review_path(review), {class: "btn blue"}  %>
+  <%= link_to 'Destroy Review', review, {method: :delete, class: "btn red"} %>
 <% end %>
 </div>
